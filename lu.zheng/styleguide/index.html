@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Styleguide</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="../lib/css/styleguide.css">
+	<link rel="stylesheet" href="../lib/css/gridsystem.css">
+    <link rel="stylesheet" href="../css/storetheme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Manrope:wght@200&family=Righteous&display=swap" rel="stylesheet">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+</head>
+
+<body>
+	 
+	<header class="navbar">
+		<div class="container display-flex">
+			<div class="flex-none">
+			   <h1>Styleguide</h1>
+	        </div>
+	        <div class="flex-stretch"></div>
+			<nav class="flex-none nav">
+			   <ul class="container display-flex">
+				  <li><a href="#tablecontents">Table of Contents</a></li>
+			   </ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="container" id="tableofcontents">
+		<h2>Table of Contents</h2>
+	      <div class="card">
+			<nav class="nav">
+			  <ul>
+				<li><a href="#typography"> Typography </a></li>
+			  	<li><a href="#headings"> Headings </a> </li>
+			  	<li><a href="#paragraphs"> Paragraphs </a> </li>		    	
+				<li><a href="#cards"> Cards </a> </li>
+			    <li><a href="#viewwindow"> View Window </a> </li>
+			    <li><a href="#navigations"> Navigations </a> </li>
+			    <li><a href="#tables"> Tables </a> </li>
+			    <li><a href="#gridsystem"> Grid System </a> </li>
+			    <li><a href="#figures"> Figures </a> </li>
+			  </ul>
+			</nav>
+		</div>
+	</div>
+
+	<div class="container" id="typography">
+		<h2>Typography</h2>
+
+		<div class="card soft" id="headings">
+			<h3>Headings</h3>
+            <h1 id="h1" style="font-family:'Righteous', cursive">MANROPE</h1>
+            <h2 id="h1" style="font-family:'Righteous', cursive">MANROPE</h2>
+            <h3 id="h1" style="font-family:'Righteous', cursive">MANROPE</h3>
+        </div>
+
+		<div class="card soft" id="paragraphs">
+            <h3>Body</h3>
+			<p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Consectetur magni magnam fugit repudiandae, eligendi odio quasi laboriosam sint autem quod? Temporibus hic ratione delectus cupiditate blanditiis officia vero aut illo.</p>
+			<p>Molestias nobis fugit amet distinctio veritatis maiores delectus aliquam, magni quam adipisci illum! Ex sed eum animi asperiores nihil vel eius, doloremque fugit, quisquam dolorem, nesciunt reiciendis, amet quod architecto?</p>
+			<p>Atque, nisi, similique. Eveniet at, molestias vitae, harum, nesciunt nam explicabo magni aperiam animi quibusdam mollitia qui earum provident iste neque sunt reiciendis alias vel tempora placeat iusto ea. Sequi.</p>
+		</div>
+	</div>
+
+
+	<div class="container" id="cards">
+		<h2>Cards</h2>
+		<div class="grid gap">
+			<div class="col-xs-12 col-md-4">
+				<div class="card">Card</div>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<div class="card soft">Card Soft</div>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<div class="card hard">Card Hard</div>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<div class="card flat">Card Flat</div>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<div class="card dark">Card Dark</div>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<div class="card medium">Card Medium</div>
+			</div>
+        </div>
+	</div>
+
+	<div class="container" id="viewwindow">
+		<h2>View Window</h2>
+		
+	</div>
+
+	<div class="container" id="navigations">
+		<h2>Navigations</h2>
+
+		<script>
+			const makeNav = (classes='') => {
+				const links = ['HOME', 'SHOP', 'ABOUT', 'CAR'];
+				let ran = Math.floor(Math.random()*links.length);
+				document.write(`
+				<div>
+				   <nav class="${classes}">
+				      <ul>
+				      ${links.reduce((r,o,i)=>{
+				   	  	return r+`<li class="${ran==i?'active':''}"><a href="#">${o}</a></li>`;
+				      },'')}
+				      </ul>
+				   </nav>
+				</div>
+				`);
+			}
+		 </script>
+
+		<div class="card soft">
+			<h3>Basic Nav</h3>
+			
+			<script>makeNav('nav')</script>
+		</div>
+	
+	    <div class="card soft">
+			<h3>Flex Nav</h3>
+            
+            <script>makeNav('nav nav-flex')</script>
+	    </div>
+		
+		<div class="card soft">
+			<h3>Stretch Nav</h3>
+
+			<script>makeNav('nav nav-stretch')</script>
+		</div>
+
+		<div class="card soft">
+			<h3>Pills Nav</h3>
+			
+			<script>makeNav('nav nav-pills')</script>
+		</div>
+
+		<div class="card soft">
+			<h3>Crumbs Nav</h3>
+			
+			<script>makeNav('nav nav-crumbs')</script>
+		</div>
+
+		<div class="card soft">
+			<h3>Material Nav</h3>
+			
+			<script>makeNav('nav nav-material')</script>
+		</div>
+
+		<script>
+			$("#navigations a").on("click", function(e){
+				e.preventDefault();
+				$(this).closest("li").addClass("active")
+				  .siblings().removeClass("active")
+			})
+		</script>
+	</div>
+
+
+
+
+
+	<div class="container" id="cards">
+		<h2>Grid System</h2>
+
+	</div>
+
+
+
+
+
+
+	<div class="container" id="cards">
+		<h2>Flex System</h2>
+
+	</div>
+
+
+
+
+
+
+	<script>
+	const makeTable = (classes='') => {
+		const head = ['ID','Office','name','email','phone'];
+		const body = [
+			['522',"Hamilton Cline", 'hcline@academyart.edu','555-2424'],
+			['512',"Fred McHale", 'fmchale@academyart.edu','555-2424'],
+			['522',"Michael Catanzaro", 'mcatanzaro@academyart.edu','555-2424'],
+			['514',"Andrea Pimentel", 'apimentel@academyart.edu','555-2424'],
+			['516',"DC Scarpelli", 'dscarpelli@academyart.edu','555-2424'],			
+		];
+
+		// let ran = Math.floor(Math.random()*iinks.length);	
+		document.write(`
+			<table class="${classes}">
+			<thead><tr>${head.reduce((r,o)=>r+`<th>${o}</th>`,'')}</tr></thead>
+			<tbody>${body.reduce((r,o,i)=>r+
+				`<tr>${
+					[i+1,...o].reduce((r,o)=>r+`<td>${o}</td>`,'')
+				}</tr>`,'')
+			}</tbody>
+		</table>
+		`);
+	}
+	</script>
+	<div class="container" id="tables">
+		<h2>Tables</h2>
+
+		<div class="card soft">
+			<h3>Basic Table</h3>
+			
+			<script>makeTable("table")</script>
+		</div>
+
+		<div class="card soft">
+			<h3>Striped Table</h3>
+			
+			<script>makeTable("table striped")</script>
+		</div>
+
+		<div class="card soft">
+			<h3>Striped Lined Vertical</h3>
+			
+			<script>makeTable("table lined vertical")</script>
+		</div>
+
+		<div class="card soft">
+			<h3>Striped Lined Horizontal</h3>
+			
+			<script>makeTable("table lined horizontal")</script>
+		</div>
+
+		<div class="card soft">
+			<h3>Striped Lined Border</h3>
+			
+			<script>makeTable("table lined border")</script>
+		</div>
+
+		<div class="card soft">
+			<h3>Striped Lined All</h3>
+			
+			<script>makeTable("table lined all")</script>
+		</div>
+
+		<div class="card soft">
+			<h3>Combinations</h3>
+			
+			<script>makeTable("table lined vertical border striped")</script>
+		</div>
+
+
+
+
+	<div class="container" id="cards">
+		<h2>Figures</h2>
+
+	</div>
+
+</body>
+
+
+</html>
