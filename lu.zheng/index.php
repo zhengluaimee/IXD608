@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 
-	<title>MOOD GROCER</title>
+	<title>MOOD GROCERY</title>
 
 	<?php include "parts/meta.php"; ?>
 </head>
@@ -24,7 +24,7 @@
 	</div>
 
 	<div class="container">
-		<div class="view-window" style="background-image:url('img/IMG_7219.JPG')">
+		<div class="view-window" style="background-image:url('img/angry.png')">
 	</div>
 
 

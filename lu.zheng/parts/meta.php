@@ -8,3 +8,6 @@
 	<link rel="stylesheet" href="lib/css/gridsystem.css">
     <link rel="stylesheet" href="css/storetheme.css">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Manrope:wght@200&family=Righteous&display=swap" rel="stylesheet">
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

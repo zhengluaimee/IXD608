@@ -3,36 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 
-	<title>MOOD GROCERY</title>
+	<title>MOOD GROCER</title>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<base href="http://aimeezhenglu.com/aau/ixd608/lu.zheng/">
-
-	<link rel="stylesheet" href="lib/css/styleguide.css">
-	<link rel="stylesheet" href="lib/css/gridsystem.css">
-    <link rel="stylesheet" href="css/storetheme.css">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Manrope:wght@200&family=Righteous&display=swap" rel="stylesheet">
+	<?php include "parts/meta.php"; ?>
 </head>
 <body>
 
     
-<header class="navbar">
-	<div class="container display-flex">
-		<div class="flex-none">
-			<h1>STORE</h1>
-		</div>
-		<div class="flex-stretch"></div>
-		<nav class="nav nav-flex flex-none">
-			<ul>
-				<li><a href="index.php">HOME</a></li>
-				<li><a href="product_list.php">STORE</a></li>
-				<li><a href="product_about.php">ABOUT</a></li>
-				<li><a href="product_cart.php">CART</a></li>
-			</ul>
-		</nav>
-	</div>
-</header>
+	<?php include "parts/navbar.php"; ?>
 
 
 	<div class="container">
