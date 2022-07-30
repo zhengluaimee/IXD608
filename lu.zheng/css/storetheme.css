@@ -148,14 +148,13 @@ body {
 }
 
 
-
-
 span.badge:not(:empty)::after {
     content: ')';
 }
 span.badge:not(:empty)::before {
     content: '(';
 }
+
 
 
 
