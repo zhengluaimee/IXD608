@@ -35,12 +35,17 @@ include_once "lib/php/functions.php";
 
 
 	<div class="container">	
-		<article id="article2" class="article card hard">
-			<h2>Article 2</h2>
+		<article id="article2" class="article card soft">
+			<h2>OUR STORE</h2>
 			<div class="article-body">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab porro libero quis maiores laborum ut ipsa tenetur sapiente minima excepturi possimus, sed voluptatibus ipsam aspernatur aperiam, minus amet est dicta soluta, quaerat. Non amet eius odit libero illo. Labore, nam.</p>
-				<p>Facere maiores fugit blanditiis, incidunt ex beatae, iusto quam officia quas laboriosam consequuntur nesciunt dolorem, rem debitis architecto? Ipsa reiciendis commodi accusantium earum magnam, nesciunt minus consectetur ea veniam, animi nobis odit beatae numquam similique quasi. Consectetur consequuntur pariatur, soluta.</p>
-				<p>Id cumque, vitae fugit veritatis illum laborum magnam pariatur voluptatem repudiandae numquam eius hic, sequi minima ab laudantium commodi veniam nesciunt maiores, necessitatibus blanditiis facilis? Placeat, alias, nobis exercitationem voluptas ratione fuga adipisci hic laborum vero rem, porro eius ut.</p>
+				<p>Mood Grocer is a magic store that sells emotions, where you can buy different emotions from different people - happy, sad, angry, tired, embarrassed, love, and more. Each emotion is only $1, 80% of which will be donated to Children's love organization.</p>
+			</div>
+		</article>
+
+		<article id="article2" class="article card soft">
+			<h2>OUR MISSION</h2>
+			<div class="article-body">
+				<p>Mood Grocer is a magic store that sells emotions, where you can buy different emotions from different people - happy, sad, angry, tired, embarrassed, love, and more. Each emotion is only $1, 80% of which will be donated to Children's love organization.</p>
 			</div>
 		</article>
 	</div>
