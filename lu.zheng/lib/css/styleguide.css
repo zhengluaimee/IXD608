@@ -69,6 +69,10 @@ a:hover {
 
 .flex-stretch { flex: 1 1 auto; }
 .flex-none { flex: none; }
+.flex-none-filter {
+	flex: none;
+	padding: .2em;
+}
 
 
 

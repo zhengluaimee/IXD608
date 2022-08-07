@@ -38,20 +38,20 @@ include_once "parts/templates.php";
 				<div class="card soft">
 				<div class="display-flex">
 					<div class="flex-stretch display-flex">
-						<div class="flex-none">
+						<div class="flex-none-filter">
 							<button data-filter="category" data-value="" type="button" class="form-button">All</button>
 						</div>
-						<div class="flex-none">
+						<div class="flex-none-filter">
 							<button data-filter="category" data-value="positive" type="button" class="form-button">Positive</button>
 						</div>
-						<div class="flex-none">
+						<div class="flex-none-filter">
 							<button data-filter="category" data-value="negative" type="button" class="form-button">Negative</button>
 						</div>
-						<div class="flex-none">
+						<div class="flex-none-filter">
 							<button data-filter="category" data-value="neutral" type="button" class="form-button">Neutral</button>
 						</div>
 					</div>
-					
+
 					<div class="flex-none">
 						<div class="form-select">
 					        <select class="js-sort">
@@ -68,6 +68,13 @@ include_once "parts/templates.php";
 		
 
 		<div class='productlist grid gap'></div>
+
+		<div class="container">
+			<footer class="display-flex flex-align-center flex-justify-center card soft">
+				@ MOOD GROCERY By ZhengLuAimee
+			</footer>
+		</div>
+
 
             
 	</div>

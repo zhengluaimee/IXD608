@@ -1,6 +1,8 @@
 <?php
 
 include_once "lib/php/functions.php";
+include_once "parts/templates.php";
+
 
 ?>
 
@@ -22,33 +24,57 @@ include_once "lib/php/functions.php";
 	<div class="container">
 		<article id="article1" class="article card soft">
 			<div class="display-flex flex-align-center flex-justify-center">
-				<div class="">
 					<h2>WELCOME TO MOOD GROCERY</h2>
-				</div>
 			</div>
 		</article>
 	</div>
 
 	<div class="container">
-		<div class="view-window" style="background-image:url('img/angry.png')">
-	</div>
+		<div class="view-window" style="background-image:url('img/angry.png')"></div>
 
 
 	<div class="container">	
 		<article id="article2" class="article card soft">
 			<h2>OUR STORE</h2>
 			<div class="article-body">
-				<p>Mood Grocer is a magic store that sells emotions, where you can buy different emotions from different people - happy, sad, angry, tired, embarrassed, love, and more. Each emotion is only $1, 80% of which will be donated to Children's love organization.</p>
-			</div>
-		</article>
-
-		<article id="article2" class="article card soft">
-			<h2>OUR MISSION</h2>
-			<div class="article-body">
-				<p>Mood Grocer is a magic store that sells emotions, where you can buy different emotions from different people - happy, sad, angry, tired, embarrassed, love, and more. Each emotion is only $1, 80% of which will be donated to Children's love organization.</p>
+				<p>Mood Grocery is a magic store that sells emotions, where you can buy different emotions from different people - happy, sad, angry, tired, embarrassed, love, and more. Each emotion is only $1, 80% of which will be donated to Children's love organization.</p>
 			</div>
 		</article>
 	</div>
+
+
+	<div class="container">
+		<h2>Latest Positive Emotions</h2>
+		<?php recommendedCategory("positive"); ?>
+		<h2>Latest Negative Emotions</h2>
+		<?php recommendedCategory("negative"); ?>
+	</div>
+	<div class="container">
+		<footer class="display-flex flex-align-center flex-justify-center card soft">
+			@ MOOD GROCERY By ZhengLuAimee
+		</footer>
+	</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 		
