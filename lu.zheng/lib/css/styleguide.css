@@ -80,6 +80,10 @@ a:hover {
 .flex-justify-center { justify-content: center; }
 
 
+.flex-column { flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
+
+
 
 /*  Small Classes  */
 
@@ -180,8 +184,9 @@ a:hover {
 
 .navbar {
 	background-color: #222223;
-    color: var(--color-white);
-    line-height: var(--header-height);
+   color: var(--color-white);
+   line-height: var(--header-height);
+   margin-bottom: 1em;
 }
 
 	.navbar h1 {
@@ -194,6 +199,10 @@ a:hover {
 		padding: 0 0.5em;
 	}
 
+
+	.flush>.navbar {
+		margin-bottom: 0;
+	}
 
 
 /* CARD */
@@ -231,6 +240,11 @@ a:hover {
 
 	.card.flat {
 		padding: 0;
+	}
+
+	[class*='col-']>.card {
+		height:100%;
+		margin:0;
 	}
 
 
