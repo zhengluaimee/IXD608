@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Aug 08, 2022 at 02:54 AM
+-- Generation Time: Aug 10, 2022 at 05:32 AM
 -- Server version: 5.6.51-cll-lve
 -- PHP Version: 7.3.32
 
@@ -47,7 +47,7 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `name`, `email`, `url`, `price`, `category`, `date_create`, `date_modify`, `description`, `thumbnail`, `images`) VALUES
-(1, 'happy', 'happy@moodgrocery.com', 'https://moodgrocery.com', 1.00, 'positive', '2022-07-28 09:09:41', '2022-08-07 21:16:43', 'Are there many happy people?', 'happy.png', 'happy.png'),
+(1, 'happy', 'happy@moodgrocery.com', 'https://moodgrocery.com', 1.01, 'positive', '2022-07-28 09:09:41', '2022-08-09 09:21:49', 'Are there many happy people?', 'happy.png', 'happy.png'),
 (2, 'funny', 'funny@moodgrocery.com', 'https://moodgrocery.com', 1.00, 'positive', '2022-07-28 09:12:05', '2022-07-28 09:12:05', 'Ready to laugh?', 'funny.png', 'funny.png'),
 (3, 'fall in love', 'fallinlove@moodgrocery.com', 'https://moodgrocery.com', 1.00, 'positive', '2022-07-28 09:13:33', '2022-08-07 09:34:24', 'Come to learn how to fall in love.', 'fallinlove.png', 'fallinlove.png'),
 (4, 'tired', 'tired@moodgrocery.com', 'https://moodgrocery.com', 1.00, 'negative', '2022-07-28 09:14:39', '2022-07-28 09:14:39', 'Is anyone as tired as you are?', 'tired.png', 'tired.png'),
@@ -78,7 +78,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

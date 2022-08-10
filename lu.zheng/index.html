@@ -1,3 +1,11 @@
+<?php
+
+include_once "lib/php/functions.php";
+include_once "parts/templates.php";
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,58 +13,48 @@
 
 	<title>MOOD GROCERY</title>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<base href="http://aimeezhenglu.com/aau/ixd608/lu.zheng/">
-
-	<link rel="stylesheet" href="lib/css/styleguide.css">
-	<link rel="stylesheet" href="lib/css/gridsystem.css">
-    <link rel="stylesheet" href="css/storetheme.css">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Manrope:wght@200&family=Righteous&display=swap" rel="stylesheet">
+	<?php include "parts/meta.php"; ?>
 </head>
-<body>
+<body class="flush">
 
     
-<header class="navbar">
-	<div class="container display-flex">
-		<div class="flex-none">
-			<h1>STORE</h1>
-		</div>
-		<div class="flex-stretch"></div>
-		<nav class="nav nav-flex flex-none">
-			<ul>
-				<li><a href="index.php">HOME</a></li>
-				<li><a href="product_list.php">STORE</a></li>
-				<li><a href="product_about.php">ABOUT</a></li>
-				<li><a href="product_cart.php">CART</a></li>
-			</ul>
-		</nav>
-	</div>
-</header>
+	<?php include "parts/navbar.php"; ?>
 
 
 	<div class="container">
 		<article id="article1" class="article card soft">
 			<div class="display-flex flex-align-center flex-justify-center">
-				<div class="">
 					<h2>WELCOME TO MOOD GROCERY</h2>
-				</div>
 			</div>
 		</article>
 	</div>
 
 	<div class="container">
-		<div class="view-window" style="background-image:url('img/angry.png')">
-	</div>
+		<div class="view-window" style="background-image:url('img/angry.png')"></div>
 
 
 	<div class="container">	
-		<article id="article2" class="article card hard">
-			<h2>Article 2</h2>
+		<article id="article2" class="article card soft">
+			<h2>OUR STORE</h2>
 			<div class="article-body">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab porro libero quis maiores laborum ut ipsa tenetur sapiente minima excepturi possimus, sed voluptatibus ipsam aspernatur aperiam, minus amet est dicta soluta, quaerat. Non amet eius odit libero illo. Labore, nam.</p>
-				<p>Facere maiores fugit blanditiis, incidunt ex beatae, iusto quam officia quas laboriosam consequuntur nesciunt dolorem, rem debitis architecto? Ipsa reiciendis commodi accusantium earum magnam, nesciunt minus consectetur ea veniam, animi nobis odit beatae numquam similique quasi. Consectetur consequuntur pariatur, soluta.</p>
-				<p>Id cumque, vitae fugit veritatis illum laborum magnam pariatur voluptatem repudiandae numquam eius hic, sequi minima ab laudantium commodi veniam nesciunt maiores, necessitatibus blanditiis facilis? Placeat, alias, nobis exercitationem voluptas ratione fuga adipisci hic laborum vero rem, porro eius ut.</p>
+				<p>Mood Grocery is a magic store that sells emotions, where you can buy different emotions from different people - happy, sad, angry, tired, embarrassed, love, and more. Each emotion is only $1, 80% of which will be donated to Children's love organization.</p>
 			</div>
 		</article>
 	</div>
+
+
+	<div class="container">
+		<h2>Latest Positive Emotions</h2>
+		<?php recommendedCategory("positive"); ?>
+		<h2>Latest Negative Emotions</h2>
+		<?php recommendedCategory("negative"); ?>
+	</div>
+	<div class="container">
+		<footer class="display-flex flex-align-center flex-justify-center card soft">
+			@ MOOD GROCERY By ZhengLuAimee
+		</footer>
+	</div>
+
+</body>
+</html>
+
